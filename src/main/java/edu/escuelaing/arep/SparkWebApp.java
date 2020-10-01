@@ -29,7 +29,12 @@ public class SparkWebApp {
     }
 
 
-
+    /**
+     * Realiza el login en cookies al usuario
+     * @param req Request del usuario
+     * @param resp Respuesta al usuario
+     * @return Mensaje de respuesta
+     */
     private static String doLogin(Request req, Response resp){
         String user = req.queryParams("username");
         String password = req.queryParams("password");
