@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"edu.escuelaing.arep.security","l":"AuthProvider"},{"p":"edu.escuelaing.arep.webservices","l":"SimpleWebService"},{"p":"edu.escuelaing.arep.webservices","l":"SparkWebApp"},{"p":"edu.escuelaing.arep.trust","l":"URLReader"},{"p":"edu.escuelaing.arep.entities","l":"User"},{"p":"edu.escuelaing.arep.repository","l":"UserDAO"}]

@@ -1,0 +1,5 @@
+edu.escuelaing.arep.entities
+edu.escuelaing.arep.repository
+edu.escuelaing.arep.security
+edu.escuelaing.arep.trust
+edu.escuelaing.arep.webservices

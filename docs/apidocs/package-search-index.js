@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"edu.escuelaing.arep.entities"},{"l":"edu.escuelaing.arep.repository"},{"l":"edu.escuelaing.arep.security"},{"l":"edu.escuelaing.arep.trust"},{"l":"edu.escuelaing.arep.webservices"}]

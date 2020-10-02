@@ -19,7 +19,10 @@ public class AuthProvider {
         String password = res.session().attribute("password");
         System.out.println(username);
         System.out.println(password);
-        return username!=null && password!=null && isUser(username, password);
+        String username2 = res.queryParams("username");
+        String password2 = res.queryParams("password");
+        return (username!=null && password!=null && isUser(username, password))
+                || (username2!=null && password2!=null && isUser(username2, password2));
     }
 
     /**

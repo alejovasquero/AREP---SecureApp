@@ -3,7 +3,7 @@
 Este proyecto consiste en la implementación de una arquitectura segura por medio del 
 uso de llaves, y la validación de autenticación, autorización e integridad de datos.
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c04625b3c71d4d9a85d74496e50b7801)](https://www.codacy.com/manual/alejovasquero/AREP---DockerWeb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alejovasquero/AREP---DockerWeb&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c555b91484c64ec781fdf7b0832d80ec)](https://www.codacy.com/gh/alejovasquero/AREP---SecureApp/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alejovasquero/AREP---SecureApp&amp;utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/alejovasquero/AREP---SecureApp.svg?style=svg)](https://circleci.com/gh/alejovasquero/AREP---SecureApp)
 ## Empezando
 
