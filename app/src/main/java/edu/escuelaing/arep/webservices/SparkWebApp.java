@@ -14,7 +14,6 @@ public class SparkWebApp {
     public static void main(String[] args) {
         port(getPort());
         try {
-
         } catch (Exception e) {
             e.printStackTrace();
         }

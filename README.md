@@ -52,12 +52,21 @@ La aplicación se encuentra alojada en el siguiente enlace [AWS](https://ec2-34-
 Una vez dentro, debemos dirigirnos a login.html para registrarnos.
 Las credenciales son "usuario" y "contraseña".
 
+Antes de usar la aplicación debemos iniciar sesión.
+
+![](img/before.PNG)
+
+![](img/login.PNG)
+
 Una vez que hayamos iniciado sesión, nos dirigimos al index y probamos la aplicación.
 
 ![](img/deploy.PNG)
 
 Por favor no dejar espacios entre elementos.
 
+## Video de explicación
+
+[YOUTUBE](https://www.youtube.com/watch?v=PQRELxDfiQc) 
 
 ## Construido con
 
