@@ -19,7 +19,7 @@ public class SparkWebApp {
             e.printStackTrace();
         }
         URLReader.main(null);
-        secure("keystores/ecikeystore.p12", "123456", null, null);
+        secure("keystores/ecikeystoreapp.p12", "123456", null, null);
         staticFileLocation("/public");
         post("/result", (req, resp) -> {
             System.out.println("POSTING");
@@ -31,7 +31,7 @@ public class SparkWebApp {
             } else {
                 resp.status(200);
                 resp.type("application/json");
-                return URLReader.readURL("https://172.18.0.1:8090/result" , req.body());
+                return URLReader.readURL("https://ec2-54-237-2-49.compute-1.amazonaws.com:8091/result" , req.body());
             }
         });
         post("/login", (req, resp) -> doLogin(req, resp));
@@ -45,7 +45,7 @@ public class SparkWebApp {
                 return "HELLO";
             }
         });
-        System.out.println(URLReader.readURL("https://172.18.0.1:8090/result" , "1,2,3,4,5"));
+        System.out.println(URLReader.readURL("https://ec2-54-237-2-49.compute-1.amazonaws.com:8091/result" , "1,2,3,4,5"));
 
     }
 

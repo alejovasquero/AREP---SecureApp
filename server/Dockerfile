@@ -9,4 +9,4 @@ COPY /keystores /usrapp/bin/keystores
 
 
 
-CMD ["java","-cp","./classes:./dependency/*","edu.escuelaing.arep.webservices.SparkWebApp"]
+CMD ["java","-cp","./classes:./dependency/*","edu.escuelaing.arep.webservices.SimpleWebService"]

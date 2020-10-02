@@ -48,6 +48,16 @@ ver el código en acción : )
 
 ### Despliegue en AWS
 
+La aplicación se encuentra alojada en el siguiente enlace [AWS](https://ec2-34-234-91-40.compute-1.amazonaws.com:8093/)
+Una vez dentro, debemos dirigirnos a login.html para registrarnos.
+Las credenciales son "usuario" y "contraseña".
+
+Una vez que hayamos iniciado sesión, nos dirigimos al index y probamos la aplicación.
+
+![](img/deploy.PNG)
+
+Por favor no dejar espacios entre elementos.
+
 
 ## Construido con
 

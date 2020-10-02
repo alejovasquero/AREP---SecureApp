@@ -1,9 +1,11 @@
 package edu.escuelaing.arep.webservices;
 
 
-import java.util.ArrayList;
+import edu.escuelaing.arep.security.AuthProvider;
+import spark.Request;
+import spark.Response;
 
-import static edu.escuelaing.arep.webservices.SparkWebApp.getPort;
+import java.util.ArrayList;
 import static spark.Spark.*;
 import static spark.Spark.post;
 
@@ -15,7 +17,7 @@ public class SimpleWebService {
         staticFileLocation("/public");
         post("/result", (req, resp) -> {
             System.out.println(req.body());
-            if(!SparkWebApp.checkAuthentication(req, resp)){
+            if(!checkAuthentication(req, resp)){
                 resp.redirect("/login.html");
                 resp.status(403);
                 return "403";
@@ -46,5 +48,29 @@ public class SimpleWebService {
         float re =(float)ans/(float)num.size();
         return re;
 
+    }
+
+    /**
+     * Cambia el puerto de respuesta, dependiendo del entorno de despliegue
+     * @return Puerto a trabajar
+     */
+    public static int getPort() {
+        if (System.getenv("PORT") != null) {
+            return Integer.parseInt(System.getenv("PORT"));
+        }
+        return 5000; //returns default port if heroku-port isn't set (i.e. on localhost)
+    }
+
+    /**
+     * Verifica que el request tenga autenticación
+     * @param req Request del usuario
+     * @param res Respuesta del usuario
+     * @return Si el usuario tiene autenticación
+     */
+    public static boolean checkAuthentication(Request req, Response res){
+        boolean follow  = AuthProvider.isAuthenticated(req);
+        String page = req.pathInfo();
+        System.out.println(follow);
+        return follow || page.equals("/login.html");
     }
 }

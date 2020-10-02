@@ -18,7 +18,7 @@ public class URLReader {
     public static void main(String[] args) {
         try {
             // Create a file and a password representation
-            File trustStoreFile = new File("myTrustStore");
+            File trustStoreFile = new File("keystores/myTrustStore");
             char[] trustStorePassword = "123456".toCharArray();
 
             // Load the trust store, the default type is "pkcs12", the alternative is "jks"
